@@ -1,0 +1,75 @@
+Picket Fence Notes
+
+
+If you stack a bunch of oscillators to cover a band of frequencies
+in equal steps, each higher in frequency than the last, the resulting
+spectrum is called a picket fence. 
+
+You can see an example of this spectrum by pressing READ WAVEFORM on the
+program "Wavanal*", directing it to the file:
+"200Hz-680Hz in 20 Hz steps with equal amplitudes"
+
+Setting the START FREQUENCY to 100 - 
+the STOP FREQUENCY to 800 - 
+and the INTERVAL to 0.1 Hz 
+and pressing DO TRANSFORM in the TRANSFORMS group of controls.
+Up will come a display
+of 25 equally spaced spectral peaks. In the WAVEFORM group of controls,
+you can listen to the resulting sound (PLAY WAVEFORM) and also look
+at it on an oscilloscope (VIEW WAVEFORM). 
+
+The Fourier synthesis makes what is essentially a set of exactly tuned
+oscillators all running in lock-step to a common reference frequency.
+The temporal waveform looks a lot like the picket-fence spectrum that
+made it: a series of blips: one in time, one down a glissando of 
+frequencies. Interesting case
+
+A comb filter can be made by feeding the output of a mixer back into
+itself through a very short delay. If one temporal cycle of the 
+waveform of a note fits exactly within the delay time, it will feedback
+into the mixer so as to reinforce itself. This holds true for two 
+complete cycles or three or any integer number of repetitions of the
+waveform. The same can be seen in the colors of oil-films floating on
+water. The light reflects off of the top of the oil, travels through 
+the very small thickness of the oil film and, after this delay,
+reflects again off the oil-water interface. The two reflections mix in
+the air. The frequencies of the ambient light that lined up in integer
+cycles within the film's thickness are quite sharply aided (the
+apparent thickness changes with the viewing angle). The result is a
+series of peaks going down the spectrum. There is no spectral peak
+or simple combination of colors for the color of silver metal. Silver
+is actually a picket-fence spectrum on 50nm centers: about seven 
+equally spaced peaks spanning the visual range of wavelengths from
+400nm to 700nm (1000nm = 1um... 1000um= 1mm... so our light is about
+one half of one thousandths of a milimeter wide). Metallic colors
+are seen in oil films.
+
+
+http://pubs.acs.org/doi/abs/10.1021/j150230a001   1ST page  from 1923
+http://pubs.acs.org/doi/abs/10.1021/j150273a001   1ST page  from 1927
+
+
+An interesting peculiarity of the sounds and waveforms of picket-fence
+pattered spectrums is how robust they are to the loss of individual 
+spectral peaks. In "200Hz-680Hz 20 Hz apart with missing peak", I've
+clipped away a random peak by setting its amplitude to zero in its 
+PARTIALS file. There is no real difference to hear or even to see on
+the oscilloscope. Yet, if you look at the TRANSFORM spectral display,
+the peak is cleanly gone. 
+
+The ability to hide missing peaks from casual view offers a means of
+encryption. One of 28 peaks gives the alphabet, at the crudest.
+In "200Hz-680Hz 20 Hz apart with many missing peaks", a multiplicity
+of peaks are missing.
+
+If the rigid spacing of peaks is disturbed by dithering or randomizing
+their frequencies, the sounds and waveforms mellow out into something
+more interesting. If the amplitudes are windowed, shaped into an
+dome as they approach and leave the center frequency, the mellowing
+can be greater.
+
+________________________________________
+
+*  
+http://www.hibberts.co.uk/wavanal.htm
+
